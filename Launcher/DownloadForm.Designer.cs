@@ -31,8 +31,6 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.labelDownloaded = new System.Windows.Forms.Label();
-            this.labelPerc = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -62,30 +60,11 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "patch-c.mpq";
             // 
-            // labelDownloaded
-            // 
-            this.labelDownloaded.AutoSize = true;
-            this.labelDownloaded.Location = new System.Drawing.Point(144, 101);
-            this.labelDownloaded.Name = "labelDownloaded";
-            this.labelDownloaded.Size = new System.Drawing.Size(0, 17);
-            this.labelDownloaded.TabIndex = 3;
-            // 
-            // labelPerc
-            // 
-            this.labelPerc.AutoSize = true;
-            this.labelPerc.Location = new System.Drawing.Point(159, 139);
-            this.labelPerc.Name = "labelPerc";
-            this.labelPerc.Size = new System.Drawing.Size(46, 17);
-            this.labelPerc.TabIndex = 4;
-            this.labelPerc.Text = "label2";
-            // 
             // DownloadForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(345, 303);
-            this.Controls.Add(this.labelPerc);
-            this.Controls.Add(this.labelDownloaded);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar1);
@@ -102,7 +81,5 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelDownloaded;
-        private System.Windows.Forms.Label labelPerc;
     }
 }
