@@ -53,7 +53,11 @@ namespace WindowsFormsApplication3
 
         private void ProgressChange(object sender, DownloadProgressChangedEventArgs e)
         {
+            int downloaded = int.Parse(e.BytesReceived.ToString());
+            int totalsize = int.Parse(e.TotalBytesToReceive.ToString());
             progressBar1.Value = e.ProgressPercentage;
+            label2.Text = "Downloaded " + (downloaded / 1024) + "KB / " + (totalsize / 1024) + "KB";
+            label3.Text = (downloaded / totalsize) + "%";
         }
 
         private string path;
