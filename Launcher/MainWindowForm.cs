@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using System.Net;
 
 namespace WindowsFormsApplication3
 {
@@ -32,8 +33,21 @@ namespace WindowsFormsApplication3
             this.path = openFile.ReadLine();
             openFile.Close();
 
+            //download patch if it doesn't exist
+            if (File.Exists(path + "/Data/patch-c.mpq"))
+            {
+                //patch is there, move forward
+            }
+            else
+            {
+                DownloadForm downloadform = new DownloadForm();
+                downloadform.ShowDialog();
+                
+            }
             //connect to database and load news
         }
+
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
